@@ -24,7 +24,7 @@ const routes = [
     },
     // 员工管理
     {
-        path:'employee',
+        path:'/employee',
         name:'employee',
         component:()=>import('@/Home/MenuIndex.vue'),
         redirect:'/employee/employeeStatistics',

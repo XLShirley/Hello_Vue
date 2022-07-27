@@ -5,7 +5,7 @@
                 <TopMenu :logoPath="logoPath" :name="name"></TopMenu>
             </el-header>
             <el-container id="left-container">
-                <el-aside width="200px">
+                <el-aside width="400px">
                     <leftMenu></leftMenu>
                 </el-aside>
                 <el-main>
