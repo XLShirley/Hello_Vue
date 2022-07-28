@@ -2,7 +2,11 @@ const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
   transpileDependencies: true,
   lintOnSave: false,
-  
+  configureWebpack:{
+    resolve:{
+      fallback: { "path": require.resolve("path-browserify") }
+    }
+  },
   // publicPath:'./',
   // devServer:{
   //   open:true,//浏览器自动打开页面

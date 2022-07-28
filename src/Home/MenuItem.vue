@@ -3,20 +3,20 @@
         <el-submenu router v-for="child in route" :key="child.name" :index="child.path" v-if="child.meta.hasSubMenu">
             <template slot="title">
                 <i :class="child.meta.icon"></i>
-                <span slot="title">{{ child.meta.title }} | {{ child.path }}</span>
+                <span slot="title">{{ child.meta.title }} | {{ getPath(child.path) }}</span>
             </template>
             <!-- 递归调用组件自身 -->
-            <MenuItem :route="child.children">
+            <MenuItem :route="child.children" :basepath="getPath(child.path)">
             </MenuItem>
         </el-submenu>
         <el-menu-item :index="getPath(child.path)" v-else>
             <i :class="child.meta.icon"></i>
-            <span slot="title">{{ child.meta.title }} | {{ child.path }}</span>
+            <span slot="title">{{ child.meta.title }} | {{ getPath(child.path) }}</span>
         </el-menu-item>
     </div>
 </template>
 <script>
-const path = require('path')
+import path from 'path'
 export default {
     name: 'MenuItem',
     props: ['route', 'basepath'],
@@ -29,7 +29,7 @@ export default {
         // routepath 为当前菜单的path值
         // getpath: 拼接 当前菜单的上一级菜单的path 和 当前菜单的path
         getPath: function(routePath){
-            return path.resolve(this.basepath, routePath);
+            return path.resolve(this.basepath,routePath);
         }
     }
 }
