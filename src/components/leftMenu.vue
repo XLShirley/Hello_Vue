@@ -1,6 +1,6 @@
 <template>
     <div id="left-menu">
-        <el-menu :default-active="$route.path" class="el-menu-vertical-demo" :collapse="false">
+        <el-menu :default-active="$route.path" class="el-menu-vertical-demo" router :collapse="false">
             <!-- 一级菜单
         循环路由数据   判断当前路由route是否包含子菜单 -->
             <MenuItem :route="routesInfo" ></MenuItem>

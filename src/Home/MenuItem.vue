@@ -1,6 +1,6 @@
 <template>
     <div class="menuitem">
-        <el-submenu router v-for="child in route" :key="child.name" :index="child.path" v-if="child.meta.hasSubMenu">
+        <el-submenu  v-for="child in route" :key="child.path" :index="getPath(child.path)" v-if="child.meta.hasSubMenu">
             <template slot="title">
                 <i :class="child.meta.icon"></i>
                 <span slot="title">{{ child.meta.title }} | {{ getPath(child.path) }}</span>

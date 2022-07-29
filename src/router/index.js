@@ -9,7 +9,7 @@ const routes = [
         path:'/index',
         name:'index',
         component:() => import('@/Home/MenuIndex.vue') ,
-        redirect:'index',
+        redirect:'/index',
         meta:{
             title:'首页' ,  //菜单标题
             icon:'el-icon-s-home',  //图标
@@ -36,8 +36,8 @@ const routes = [
         children:[
             // 员工统计
             {
-                path:'employeeStatisyics',
-                name:'employeeStatisyics',
+                path:'employeeStatistics',
+                name:'employeeStatistics',
                 meta:{
                     title:'员工统计',
                     hasSubMenu:false
@@ -134,10 +134,12 @@ const routes = [
                 children:[
                     {
                         path:'options1',
+                        name:'options1.vue',
                         meta:{
                             title:'列表一',
                             hasSubMenu:false,
-                        }
+                        },
+                        component:()=>import('@/User/options1.vue')
                     },
                     {
                         path:'options2',
