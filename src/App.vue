@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <MenuIndex></MenuIndex>
+    <router-view/>
     <!-- <img alt="Vue logo" src="./assets/xl.jpg" >
     <img alt="Vue logo" src="./assets/logo.png">
     <img alt="Vue logo" src="./assets/hyh.png" style="width:175px;height:175px">
@@ -51,7 +51,6 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
   margin-top: 60px;
 }

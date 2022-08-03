@@ -6,7 +6,7 @@ Vue.use(Router)
 const routes = [
     // 首页(仪表盘 快速入口)
     {
-        path:'/index',
+        path:'/',
         name:'index',
         component:() => import('@/Home/MenuIndex.vue') ,
         redirect:'/index',

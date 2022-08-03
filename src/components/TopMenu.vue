@@ -1,6 +1,6 @@
 <template>
     <div class="top-menu">
-        <img :src="logoPath" class="logo" height="75px" width="75px"/>
+        <img :src="logoPath" class="logo" height="15px" width="15px"/>
         <p class="name">{{name}}</p>
     </div>
 </template>

@@ -16,9 +16,13 @@
     </div>
 </template>
 <script>
+import  MenuItem  from '@/Home/MenuItem.vue';
 import path from 'path'
 export default {
     name: 'MenuItem',
+    components:{
+        MenuItem,
+    },
     props: ['route', 'basepath'],
     data() {
         return {
