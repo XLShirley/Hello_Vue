@@ -16,7 +16,7 @@
                         </el-select>
                     </el-col>
                     <el-col :span="12">
-                        <span>访客模式</span>
+                        <span>访客模式状态</span>
                         <el-select v-model="visitormode" style="margin-top:5px;" placeholder="请选择">
                             <el-option
                             v-for="item in visitormodeArr"

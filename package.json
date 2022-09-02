@@ -14,6 +14,7 @@
     "path-browserify": "^1.0.1",
     "sass-loader": "^7.0.1",
     "vue": "^2.6.14",
+    "vue-drag-resize": "^1.5.4",
     "vue-router": "^3.5.4",
     "vuex": "^2.0.0"
   },

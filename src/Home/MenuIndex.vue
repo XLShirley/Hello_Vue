@@ -4,8 +4,8 @@
             <el-header>
                 <TopMenu :logoPath="logoPath" :name="name"></TopMenu>
             </el-header>
-            <el-container id="left-container">
-                <el-aside width="400px">
+            <el-container>
+                <el-aside style="width:200px">
                     <leftMenu></leftMenu>
                 </el-aside>
                 <el-main>

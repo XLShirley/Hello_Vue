@@ -31,13 +31,13 @@ export default {
 </script>
 <style lang="scss" scoped>
 // 使左边的菜单外层的元素高度充满屏幕
-#left-container {
+#left-menu {
+    width: 200px;
     position: absolute;
-    top: 100px;
+    top: 150px;
     bottom: 0px;
 
     // 使菜单高度充满屏幕
-    #left-menu,
     .el-menu-vertical-demo {
         height: 100%;
     }

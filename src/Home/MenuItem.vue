@@ -3,7 +3,7 @@
         <el-submenu  v-for="child in route" :key="child.path" :index="getPath(child.path)" v-if="child.meta.hasSubMenu">
             <template slot="title">
                 <i :class="child.meta.icon"></i>
-                <span slot="title">{{ child.meta.title }} | {{ getPath(child.path) }}</span>
+                <span slot="title">{{ child.meta.title }} </span>
             </template>
             <!-- 递归调用组件自身 -->
             <MenuItem :route="child.children" :basepath="getPath(child.path)">
@@ -11,7 +11,7 @@
         </el-submenu>
         <el-menu-item :index="getPath(child.path)" v-else>
             <i :class="child.meta.icon"></i>
-            <span slot="title">{{ child.meta.title }} | {{ getPath(child.path) }}</span>
+            <span slot="title">{{ child.meta.title }} </span>
         </el-menu-item>
     </div>
 </template>
